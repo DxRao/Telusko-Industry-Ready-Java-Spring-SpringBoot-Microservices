@@ -140,11 +140,13 @@ public class SqureBoxStars {
 			
 				}
 				
+			}//j loop
+				
 				System.out.print("   ");
 				
 				
 				
-				for(j = 0; j < n; j++) {
+				for(int j = 0; j < n; j++) {
 					
 					if(i == 0 ||  i == n-1 || j == 0 ||  j == (n-1)/4 || j == (n-1)/2 || j == (3 * n)/4 || j == (n-1)/2 || j == n-1) {
 					
@@ -159,7 +161,26 @@ public class SqureBoxStars {
 				
 				}//j loop
 			
+			
+			
+			System.out.print("   ");			
+			
+			for(int j = 0; j < n; j++) {
+				
+				if(i == 0 ||  i == n-1 || j == 0 ||  i == (n-1)/4 || i == (n-1)/2 || i == (3 * n)/4 ||  j == n-1) {
+				
+					System.out.print("*");
+			
+				}
+				else {				
+			
+					System.out.print(" ");	
+			
+				}
+			
 			}//j loop
+			
+		
 			
 			System.out.println();
 			
