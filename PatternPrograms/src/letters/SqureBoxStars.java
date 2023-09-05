@@ -23,6 +23,7 @@ public class SqureBoxStars {
 			
 			}//j loop
 			
+			
 			System.out.print("   ");
 			
 			for(int j = 0; j < n; j++) {
@@ -39,6 +40,7 @@ public class SqureBoxStars {
 				}
 			
 			}//j loop
+			
 			
 			System.out.print("   ");
 			
@@ -57,6 +59,7 @@ public class SqureBoxStars {
 			
 			}//j loop
 			
+			
 			System.out.print("   ");
 			
 			for(int j = 0; j < n; j++) {
@@ -73,6 +76,7 @@ public class SqureBoxStars {
 				}
 			
 			}//j loop
+			
 			
 			System.out.print("   ");
 			
@@ -91,6 +95,7 @@ public class SqureBoxStars {
 			
 			}//j loop
 			
+			
 			System.out.print("   ");
 			
 			for(int j = 0; j < n; j++) {
@@ -108,6 +113,7 @@ public class SqureBoxStars {
 			
 			}//j loop
 			
+			
 			System.out.print("   ");
 			
 			for(int j = 0; j < n; j++) {
@@ -124,6 +130,7 @@ public class SqureBoxStars {
 				}
 			
 			}//j loop
+			
 			
 			System.out.print("   ");
 			
@@ -159,8 +166,7 @@ public class SqureBoxStars {
 				
 					}
 				
-				}//j loop
-			
+				}//j loop			
 			
 			
 			System.out.print("   ");			
