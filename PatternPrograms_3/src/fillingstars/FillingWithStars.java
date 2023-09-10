@@ -24,6 +24,81 @@ public class FillingWithStars {
 
 			}//j loop
 			
+			System.out.print("   ");
+			
+			for(int j = 0; j <n; j++) {
+				
+				if(i+j <= (n-1) ) {
+
+					System.out.print("*");
+							
+				}
+						
+				else{				
+
+					System.out.print(" ");	
+
+				}
+
+			}//j loop
+			
+			System.out.print("  ");
+			
+			for(int j = 0; j <n; j++) {
+				
+				if(i <= j ) {
+
+					System.out.print("*");
+							
+				}
+						
+				else{				
+
+					System.out.print(" ");	
+
+				}
+
+			}//j loop
+			
+			System.out.print("  ");
+			
+			for(int j = 0; j <n; j++) {
+				
+				if(i >= j ) {
+
+					System.out.print("*");
+							
+				}
+						
+				else{				
+
+					System.out.print(" ");	
+
+				}
+
+			}//j loop
+			
+			System.out.print("  ");
+			
+			for(int j = 0; j <n; j++) {
+				
+				if(i+j >= n-1 ) {
+
+					System.out.print("*");
+							
+				}
+						
+				else{				
+
+					System.out.print(" ");	
+
+				}
+
+			}//j loop
+			
+
+			
+			
 			System.out.println();
 			
 		} // i loop
