@@ -96,6 +96,24 @@ public class FillingWithStars {
 
 			}//j loop
 			
+			System.out.print("  ");
+			
+			for(int j = 0; j <n; j++) {
+				
+				if(i+j <= (n-1)/2 ||  i - j >= (n-1)/2 || j - i >= (n-1)/2 || i+j >= (n-1)+(n-1)/2 ) {
+
+					System.out.print(" ");
+							
+				}
+						
+				else{				
+
+					System.out.print("*");	
+
+				}
+
+			}//j loop
+			
 
 			
 			
