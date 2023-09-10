@@ -112,10 +112,7 @@ public class FillingWithStars {
 
 				}
 
-			}//j loop
-			
-
-			
+			}//j loop			
 			
 			System.out.println();
 			
