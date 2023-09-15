@@ -9,19 +9,20 @@ public class SwitchDemo {
 		switch(name) {
 		
 		case "Monday":
-			System.out.println("6 am");
+			System.out.println("Wake up at 6 am");
 			break;
 		
 		case "Tuesday", "Wednesday", "Thursday":
-			System.out.println("7 am");
+			System.out.println("Wake up at 7 am");
+			System.out.println("Try again at 7:30 am");
 			break;
 			
 		case "Friday":
-			System.out.println("5 am");
+			System.out.println("Wake up at 5 am");
 			break;
 		
 		case "Saturday", "Sunday":
-			System.out.println("8 am");
+			System.out.println("Wake up at 8 am");
 			break;
 			
 		default:
