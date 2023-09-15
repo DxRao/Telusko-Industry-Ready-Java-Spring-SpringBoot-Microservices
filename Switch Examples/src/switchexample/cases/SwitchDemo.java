@@ -4,7 +4,7 @@ public class SwitchDemo {
 
 	public static void main(String[] args) {
 		
-		String  name = "Sunda";
+		String  name = "Wednesday";
 		
 		switch(name) {
 		
