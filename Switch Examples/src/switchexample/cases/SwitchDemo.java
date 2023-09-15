@@ -6,9 +6,9 @@ public class SwitchDemo {
 		
 		String  name = "Wednesday";
 		
-		switch(name) {
+		switch(name) { // Check/write variable-name
 		
-		case "Monday":
+		case "Monday": // Check/match/write "variable value"
 			System.out.println("Wake up at 6 am");
 			break;
 		
