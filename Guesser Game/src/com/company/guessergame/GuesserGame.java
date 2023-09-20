@@ -13,6 +13,7 @@ class Umpire{
 	void getGuesserNumber() {
 	
 	Guesser g = new Guesser();
+	
 	guesserNum = g.guessingNumber();
 	
 	}
@@ -91,9 +92,8 @@ class Umpire{
 		
 	}// compare
 	
-	
-	
 } // Umpire
+
 class Player{
 	
 	int guessNum;
@@ -102,7 +102,7 @@ class Player{
 		
 	Scanner scan = new Scanner(System.in);
 	
-	System.out.println("Player! Please guess a number: ");
+	System.out.println("Player! Please guess a whole number: ");
 	
 	guessNum = scan.nextInt();
 	
@@ -111,6 +111,7 @@ class Player{
 	}
 	
 }
+
 class Guesser{
 	
 	int guessNum;
@@ -119,11 +120,12 @@ class Guesser{
 		
 	Scanner scan = new Scanner(System.in);
 	
-	System.out.println("Guesser! Please guess a number: ");
+	System.out.println("Guesser! Please guess a whole number: ");
 	
 	guessNum = scan.nextInt();
 	
 	return guessNum;
+	
 	}
 }
 
@@ -142,5 +144,7 @@ public class GuesserGame {
 			ump.getPlayerNumbers();
 			ump.compare();			
 		}
-	}
-}
+		
+	}// main
+	
+}// GuesserGame class
