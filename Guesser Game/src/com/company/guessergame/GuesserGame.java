@@ -109,9 +109,16 @@ class Player{
 		
 	Scanner scan = new Scanner(System.in);
 	
-	System.out.println("Player! Please guess a whole number: ");
+	System.out.println("Player! Please guess a whole number from 0 to 10: ");
 	
 	guessNum = scan.nextInt();
+	
+	while (!(guessNum > -1 && guessNum < 11)) {
+		
+		System.out.println("Wrong input! Player please guess a whole number again from 0 to 10: ");
+		
+		guessNum = scan.nextInt();				
+	}
 	
 	return guessNum;
 	
@@ -130,6 +137,13 @@ class Guesser{
 	System.out.println("Guesser! Please guess a whole number: ");
 	
 	guessNum = scan.nextInt();
+	
+	while (!(guessNum > -1 && guessNum < 11)) {
+		
+		System.out.println("Wrong input! Guesser please guess a whole number again from 0 to 10: ");
+		
+		guessNum = scan.nextInt();				
+	}
 	
 	return guessNum;
 	
