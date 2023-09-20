@@ -4,10 +4,14 @@ import java.util.Scanner;
 
 class Umpire{
 	
-	int guesserNum;
-	int player1Num;
+	int guesserNum; 
+	
+	int player1Num; 
+	
 	int player2Num;
+	
 	int player3Num;
+	
 	static boolean flag = true;
 	
 	void getGuesserNumber() {
@@ -134,14 +138,19 @@ public class GuesserGame {
 	public static void main(String[] args) {		 
 			
 		Umpire ump = new Umpire();
+		
 		ump.getGuesserNumber();
+		
 		ump.getPlayerNumbers();
+		
 		ump.compare();
 		
 		while(Umpire.flag == false) {
 			
 			ump.getGuesserNumber();
+			
 			ump.getPlayerNumbers();
+			
 			ump.compare();			
 		}
 		
