@@ -45,6 +45,7 @@ class Umpire{
 			
 			flag = true;
 		}
+		
 		else if((guesserNum == player1Num) && (guesserNum == player2Num)){
 			
 			System.out.println("Game tied between Player1 and Player2");
@@ -52,6 +53,7 @@ class Umpire{
 			flag = true;
 				
 		}
+		
 		else if ((guesserNum == player1Num) && (guesserNum == player3Num)){
 			
 			System.out.println("Game tied between Player1 and Player3");
@@ -87,6 +89,7 @@ class Umpire{
 			
 			flag = true;
 		}
+		
 		else {
 			
 			flag = false;
