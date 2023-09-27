@@ -29,7 +29,7 @@ package com.companyname.mysql;
 			
 			String url = "jdbc:mysql://localhost:3306/telusko";
 			
-			Connection con = DriverManager.getConnection(url, "root", "rao3mysql");
+			Connection con = DriverManager.getConnection(url, "root", "*******");
 			
 			System.out.println("Connection to Database Telusko established");
 			
