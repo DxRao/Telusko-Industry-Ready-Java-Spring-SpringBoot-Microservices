@@ -1,0 +1,13 @@
+package com.company.springprojects;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class SpringBootHelloWorldProjectApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
