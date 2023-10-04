@@ -3,6 +3,8 @@ package com.company.binarySearch;
 public class BinarySearchRecursive {
 
 	public static void main(String[] args) {
+		
+		// Time complexity of Binary search -> Best = Average = Worst = Big O(log n)
 		 
 		int[] nums = {3, 5, 7, 9, 11, 13,15};
 		
