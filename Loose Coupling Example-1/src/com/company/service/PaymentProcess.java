@@ -4,7 +4,7 @@ public class PaymentProcess {
 	
 	private IPay pay;
 	
-	// no parameterized default constructor
+	// no parameterized constructor
 	public PaymentProcess() {
 		
 		super();
