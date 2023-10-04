@@ -2,7 +2,7 @@ package com.company.service;
 
 public class CourseProcess {
 	
-	CourseList course;	
+	private CourseList course;	
 	
 	//setter injection
 	public void setCourse(CourseList course) {

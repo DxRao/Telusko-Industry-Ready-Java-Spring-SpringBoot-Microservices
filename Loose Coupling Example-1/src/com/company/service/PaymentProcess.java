@@ -2,7 +2,7 @@ package com.company.service;
 
 public class PaymentProcess {
 	
-	IPay pay;
+	private IPay pay;
 	
 	// no parameterized default constructor
 	public PaymentProcess() {
