@@ -1,25 +1,36 @@
 package com.company.innerClasses;
 
-class A1{ // can't be static
+class A1{ // Outer class can't be static
 	
 	int num; // variable can be static
+	static int z; // static variable
 	
 	A1(){
 		
 	}
-	void show() { // methods can be static
+	void show() { // methods can be static if you want
 		
 		System.out.println("In class A1 show");
 	}
-	static class B{ // Only inner classes can be static and not the outer class A
+	static class B{ // Only inner classes can use keyword static and not the outer classes like A
 		
-		int x;
+		 int x;
 		
 		void something() {
 			
+			//num = 33; // static class method can't access non static variable of class A
+			z = 33; // static class method can access static variable of class A
+			
 			System.out.println("In class B something() method");
 		}		
-	}	
+	}
+	class C extends B{ // allowed
+		
+		void doSomething(){
+			
+			x = 44; // variable x is accessible in class C as its inherited.			
+		}		
+	}
 }
 public class InnerClassStatic {
 
@@ -45,10 +56,8 @@ public class InnerClassStatic {
 }
 
 /* OUTPUT:
-  
-In class A1 show
-10
-In class B something() method
-20 
+
+Purpose of anonymous inner class is to override the P class show() method
+in show1
 
  */
