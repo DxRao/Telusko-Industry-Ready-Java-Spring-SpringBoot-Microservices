@@ -11,6 +11,10 @@ class P{
 		
 		System.out.println("in class P show1()");
 	}
+	
+	void abc() {
+		System.out.println("in abc() method");
+	}
 }
 	
 
@@ -19,7 +23,7 @@ class P{
  * println("Purpose of class Q is to override the P class show() method"); } }
  */
 
-public class OverridingNormalClassMethod {
+public class OverridingNormalClassMethod { // Anonymous inner class of no name belongs to this outer class
 
 	public static void main(String[] args) {
 		
@@ -41,10 +45,13 @@ public class OverridingNormalClassMethod {
 			void show2() { // you can have a local method but you can't call or use it(only a warning from compiler)
 				System.out.println(" In show2() method");
 			}
-		};		
+		}; 
+		// dot class file is generated for Anonymous inner class ( outerClassName$01.class)		
+		//dot class file is not generated for lamda expression though.
 		
 		obj.show();	
 		obj.show1();
-		//obj.show2(); // Compile Time error: The method show2() is undefined for type P		
+		//obj.show2(); // Compile Time error: The method show2() is undefined for type P
+		obj.abc(); // this method call for abc() method of parent class P is allowed even though its not overridden.
 	}
 }
