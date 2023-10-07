@@ -46,7 +46,7 @@ public class OverridingNormalClassMethod { // Anonymous inner class of no name b
 				System.out.println(" In show2() method");
 			}
 		}; 
-		// dot class file is generated for Anonymous inner class ( outerClassName$01.class)		
+		// dot class file is generated for Anonymous inner class ( outerClassName$1.class)		
 		//dot class file is not generated for lamda expression though.
 		
 		obj.show();	
