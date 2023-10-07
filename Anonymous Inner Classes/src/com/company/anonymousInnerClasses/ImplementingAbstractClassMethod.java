@@ -1,6 +1,7 @@
 package com.company.anonymousInnerClasses;
 
 abstract class ABC{
+	
 	void show1() {
 		
 		System.out.println("in show1() method");
@@ -23,6 +24,7 @@ public class ImplementingAbstractClassMethod {
 		};
 		
 		abc.show1();
+		
 		abc.show2();
 	}
 }
