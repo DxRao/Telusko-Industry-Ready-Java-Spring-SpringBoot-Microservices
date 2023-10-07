@@ -2,7 +2,8 @@ package com.company.anonymousInnerClasses;
 
 interface XYZ{
 	
-	void show1(); 
+	void show1();
+	
 	void show2();	
 }
 
