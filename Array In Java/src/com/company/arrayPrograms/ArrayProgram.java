@@ -49,9 +49,18 @@ public class ArrayProgram {
 		arr[1][0] = 8;
 		arr[1][1] = 9;
 		
+		System.out.println();
+		System.out.print("Assigned elements later on in 2-D Array are( through 2-for loops) : ");
+		
+		for(int i =0; i < arr.length; i++){ // length of row
+			for(int j =0; j < arr[i].length; j++){// length of column
+				
+				System.out.print(arr[i][j] + " ");				
+			}			
+		}		
 		
 		System.out.println();
-		System.out.print("Assigned elements later on in 2-D Array are: ");
+		System.out.print("Assigned elements later on in 2-D Array are (through 2-enhanced for loops): ");
 		
 		for(int[] myArray: arr) {// 2-D array printing
 			for(int arrP: myArray) {
