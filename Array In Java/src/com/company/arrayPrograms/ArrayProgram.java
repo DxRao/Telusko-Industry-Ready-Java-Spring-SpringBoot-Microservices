@@ -12,7 +12,7 @@ public class ArrayProgram {
 		
 		
 		int[][][] arrr = new int[2][2][2]; // in Zagged Array - last column is left empty
-		// arrr[][][] = {{{{1,2},{3,4}}},{{{5,6},{7,8}}}};
+		//arrr[][][] = {{1,2},{3,4},{5,6},{7,8}};
 		
 		arrr[0][0][0] = 10;
 		arrr[0][0][1] = 11;
