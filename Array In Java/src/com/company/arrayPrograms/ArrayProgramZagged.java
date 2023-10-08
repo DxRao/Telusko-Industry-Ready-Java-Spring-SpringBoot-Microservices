@@ -1,35 +1,38 @@
 package com.company.arrayPrograms;
 
-public class ArrayProgram {
+public class ArrayProgramZagged {
 
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		
 		//int[] ar = new int[5];
 		 int[] ar = {1,2,3,4,5};
 		
-		//int[][] arr = new int[2][2];		
-		int[][] arr = {{1,2}, {3,4}};
+		int[][] arr = new int[2][];	// Zagged Array - empty last column	
 		
+		arr[0] = new int[3]; // allocate 3 columns to arr[0]
+		arr[1] = new int[2]; // allocate 2 columns to arr[1]		
 		
-		int[][][] arrr = new int[2][2][2]; // in Zagged Array - last column is left empty
-		// arrr[][][] = {{{{1,2},{3,4}}},{{{5,6},{7,8}}}};
+		int[][][] arrr = new int[2][2][]; // in Zagged Array - last column is left empty		
+		
+		arrr[0][0] = new int[2];
+		arrr[0][1]	= new int[1];
+		arrr[1][0] = new int[1];
+		arrr[1][1]	= new int[1];	
+		
 		
 		arrr[0][0][0] = 10;
 		arrr[0][0][1] = 11;
 		arrr[0][1][0] = 12;
-		arrr[0][1][1] = 13;
-		arrr[1][0][0] = 14;
-		arrr[1][0][1] = 15;
-		arrr[1][1][0] = 16;
-		arrr[1][1][1] = 17;
-		
-		
+		//arrr[0][1][1] = 13;
+		arrr[1][0][0] = 13;
+		//arrr[1][0][1] = 15;
+		arrr[1][1][0] = 14;
+		//arrr[1][1][0] = 16;		
 		
 		System.out.print("Elements in 1-D Array are: ");
 		for(int myArray: ar) {// 1-D array printing
 			
-			System.out.print(myArray + " ");
-			
+			System.out.print(myArray + " ");			
 		}
 		
 		System.out.println();
@@ -40,14 +43,14 @@ public class ArrayProgram {
 			
 			System.out.print(arrP + " ");
 			
-			}
-			
+			}			
 		}
 		
 		arr[0][0] = 6;
 		arr[0][1] = 7;
-		arr[1][0] = 8;
-		arr[1][1] = 9;
+		arr[0][2] = 8;
+		arr[1][0] = 9;
+		arr[1][1] = 10;
 		
 		System.out.println();
 		System.out.print("Assigned elements later on in 2-D Array are( through 2-for loops) : ");
@@ -67,8 +70,7 @@ public class ArrayProgram {
 			
 			System.out.print(arrP + " ");
 			
-			}
-			
+			}			
 		}
 		
 		System.out.println();
