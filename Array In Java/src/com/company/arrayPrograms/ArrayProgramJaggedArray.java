@@ -1,6 +1,6 @@
 package com.company.arrayPrograms;
 
-public class ArrayProgramZagged {
+public class ArrayProgramJaggedArray {
 
 public static void main(String[] args) {
 		
