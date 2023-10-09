@@ -7,12 +7,12 @@ public static void main(String[] args) {
 		//int[] ar = new int[5];
 		 int[] ar = {1,2,3,4,5};
 		
-		int[][] arr = new int[2][];	// Zagged Array - empty last column	
+		int[][] arr = new int[2][];	// Jagged Array - empty last column	
 		
 		arr[0] = new int[3]; // allocate 3 columns to arr[0]
 		arr[1] = new int[2]; // allocate 2 columns to arr[1]		
 		
-		int[][][] arrr = new int[2][2][]; // in Zagged Array - last column is left empty		
+		int[][][] arrr = new int[2][2][]; // in Jagged Array - last column is left empty		
 		
 		arrr[0][0] = new int[2];
 		arrr[0][1]	= new int[1];
@@ -53,7 +53,7 @@ public static void main(String[] args) {
 		arr[1][1] = 10;
 		
 		System.out.println();
-		System.out.print("Assigned elements later on in 2-D Array are( through 2-for loops) : ");
+		System.out.print("Assigned elements later on in 2-D Array (printed through 2-for loops) are: ");
 		
 		for(int i =0; i < arr.length; i++){ // length of row
 			for(int j =0; j < arr[i].length; j++){// length of column
@@ -63,7 +63,7 @@ public static void main(String[] args) {
 		}		
 		
 		System.out.println();
-		System.out.print("Assigned elements later on in 2-D Array are (through 2-enhanced for loops): ");
+		System.out.print("Assigned elements later on in 2-D Array (printed through 2-enhanced for loops) are: ");
 		
 		for(int[] myArray: arr) {// 2-D array printing
 			for(int arrP: myArray) {
@@ -74,7 +74,21 @@ public static void main(String[] args) {
 		}
 		
 		System.out.println();
-		System.out.print("Elements in 3-D Array are: ");
+		System.out.print("Elements in 3-D Array (printed through 3-for loops) are : ");
+		
+		for(int i =0; i < arrr.length; i++){ // length of row
+			
+			for(int j =0; j < arrr[i].length; j++){ // length of row
+				
+				for(int k = 0; k < arrr[i][j].length; k++ ){ // length of column
+						
+					System.out.print(arrr[i][j][k] + " ");	
+				}
+			}			
+		}		
+		
+		System.out.println();
+		System.out.print("Elements in 3-D Array (printed through 3-enhanced for loops) are: ");
 		
 		for(int[][] myArray: arrr) {// 3-D array printing
 			for(int[] arrP: myArray) {
