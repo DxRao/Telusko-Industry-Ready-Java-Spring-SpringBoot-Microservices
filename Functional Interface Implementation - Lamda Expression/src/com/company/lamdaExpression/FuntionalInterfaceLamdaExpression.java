@@ -1,6 +1,6 @@
 package com.company.lamdaExpression;
 
-@FunctionalInterface
+@FunctionalInterface // interface with single abstract method
 interface Mobile{
 	
 	void disp();
