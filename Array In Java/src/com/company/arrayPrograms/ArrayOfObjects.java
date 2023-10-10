@@ -34,7 +34,14 @@ public class ArrayOfObjects {
 		
 		for( Student array:starr) {
 			
-			System.out.println(array);
+			System.out.println(array);// Printing Student data by overriding toString() method of default parent Object class.
+		}
+		
+		for( Student array:starr) {// Printing Student data directly without overriding the toString() method.
+			
+			System.out.print(array.name + " ");
+			System.out.print(array.age + " ");
+			System.out.println(array.marks);
 		}
 	}
 }
