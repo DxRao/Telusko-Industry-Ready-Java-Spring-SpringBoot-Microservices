@@ -1,6 +1,6 @@
 package com.company.string;
 
-public class ComparingEqualsMethod { // Comparing String.equals() Vs StringBuffer/Builder.equals() methods
+public class ComparingEqualsMethod { // Comparing the output of String.equals() Vs StringBuffer/Builder.equals() methods
 
 	public static void main(String[] args) {
 		
