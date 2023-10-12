@@ -12,6 +12,7 @@ public class ComparingEqualsMethod { // Comparing String.equals() Vs StringBuffe
 		
 		System.out.println(s1 == s2); // returns true as both object reference variables hold same address in SCP pointing to same object.. 
 		System.out.println(s1.equals(s2)); // returns true as both object reference variables point to same object with value "Telusko" 
+		
 		// In String class -> equals() method is made to override equals() method of its parent Object class 
 		//to change the behavior to comparing values rather than comparing addresses of two reference variables.
 	
