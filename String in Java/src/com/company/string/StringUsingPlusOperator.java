@@ -7,6 +7,7 @@ public class StringUsingPlusOperator {
 		String str1="Java";
 		
 		String str2="Ja";
+		
 		String str3="va";
 		
 		
@@ -14,8 +15,9 @@ public class StringUsingPlusOperator {
 		
 		System.out.println(str1==str4);//false
 		
-		String str5="Hyder";
-		String str6="Hy"+"der"; // Using plus operator with String literals
+		String str5="DayakarRao";
+		
+		String str6="Dayakar"+"Rao"; // Using plus operator with String literals
 		
 		System.out.println(str5==str6);//true
 		
