@@ -8,6 +8,7 @@ class MultiplyTest {
 
 	@Test
 	void test() {
+		
 		Multiply m = new Multiply();
 		
 		int actual = m.multiply(10, 3);
