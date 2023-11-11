@@ -17,6 +17,15 @@ public class StringIntArrayAsArgument {
 		String y = new String(ascii, 0, 4); // array[], int start_index, int length of string
 		
 		System.out.println(y); // Output: ABCD ... A at index 0 and length of string is 4 ie... ABCD
+		
+		String z = new String(ascii, 0, 2); // array[], int start_index, int length of string
+		
+		System.out.println(z); // Output: AB ... A at index 0 and length of string is 4 ie... AB
+		
+		String s1 = "one";
+		s1 = s1 + "two";
+		
+		System.out.println(s1); // onetwo
 	}
 }
 
@@ -25,6 +34,8 @@ public class StringIntArrayAsArgument {
 BCD
 BC
 ABCD
+AB
+onetwo
 
 */
 
