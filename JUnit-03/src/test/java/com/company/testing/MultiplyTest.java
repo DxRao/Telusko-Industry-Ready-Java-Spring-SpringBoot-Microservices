@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class MultiplyTest {
 
 	@Test
-	void test() {
+	void test() {// NOT MANDATORY TO HAVE Public access specifier like in JUnit 4 version.
 		
 		Multiply m = new Multiply();
 		
