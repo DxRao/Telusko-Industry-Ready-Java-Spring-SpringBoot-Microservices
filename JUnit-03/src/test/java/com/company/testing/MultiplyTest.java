@@ -17,5 +17,4 @@ class MultiplyTest {
 		
 		assertEquals(expected, actual);
 	}
-
 }
