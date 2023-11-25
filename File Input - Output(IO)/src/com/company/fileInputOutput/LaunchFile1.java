@@ -40,12 +40,12 @@ public class LaunchFile1
 			System.out.println(files);
 		}
 		
-		System.out.println("The number files in that direcotry is : " + count);
+		System.out.println("The number files in that directory are : " + count);
 		
 		}
 		catch(Exception e)
 		{
-			System.out.println("Some exception occured");
+			System.out.println("Some exception has occured");
 		}
 
 	}
