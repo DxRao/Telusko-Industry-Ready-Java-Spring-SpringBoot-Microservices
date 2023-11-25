@@ -10,8 +10,8 @@ public class FileAndBufferedWriter {
 
 	public static void main(String[] args) throws IOException {
 	
-		FileWriter writer=null;
-		BufferedWriter bw=null;
+		FileWriter writer=null; // Must for File Writing
+		BufferedWriter bw=null; // Optional for efficient Writing purposes
 		String path1="D:\\Telusko\\InputOutput";
 		
 		try{
