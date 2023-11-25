@@ -52,11 +52,15 @@ public class SerializationDeserialization{
 		try{
 		
 			// Without using BufferedOutputStream and BufferedInputStream
+			
+					// Serialization
+			
 			  FileOutputStream fos=new FileOutputStream("D:\\Telusko\\InputOutput\\java.txt"); 
 			  ObjectOutputStream oos=new ObjectOutputStream(fos); 
-			  oos.writeObject(emp);
-			  
+			  oos.writeObject(emp);			  
 			  oos.close();
+			  
+			  		// Deserialization
 			  
 			  FileInputStream fis=new FileInputStream("D:\\Telusko\\InputOutput\\java.txt"); 
 			  ObjectInputStream ois=new ObjectInputStream(fis);
@@ -67,6 +71,8 @@ public class SerializationDeserialization{
 			  
 			  // By using BufferedOutputStream and BufferedInputStream
 			  
+			  		// Serialization
+			  
 			  FileOutputStream fos1=new FileOutputStream("D:\\Telusko\\InputOutput\\java1.txt"); 
 			  BufferedOutputStream bos1=new BufferedOutputStream(fos1); 
 			  ObjectOutputStream oos1=new ObjectOutputStream(bos1); 
@@ -75,7 +81,8 @@ public class SerializationDeserialization{
 			  oos1.close(); 
 			  bos1.close();
 			 
-			
+			  		// Deserialization
+			  
 			  FileInputStream fis1=new FileInputStream("D:\\Telusko\\InputOutput\\java1.txt"); 
 			  BufferedInputStream bis1=new BufferedInputStream(fis1);
 			  ObjectInputStream ois1=new ObjectInputStream(bis1);
