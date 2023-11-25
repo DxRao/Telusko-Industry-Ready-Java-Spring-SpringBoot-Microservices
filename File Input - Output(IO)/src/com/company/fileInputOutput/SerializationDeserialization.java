@@ -8,11 +8,11 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import java.io.Serializable; // Tagged Interface with no body between {  }
 
 
 
-class Employee1 implements Serializable{
+class Employee1 implements Serializable{ // Implementing Serializable interface takes care of both Serialization and Deserialization
 
 	/**
 	 * 
