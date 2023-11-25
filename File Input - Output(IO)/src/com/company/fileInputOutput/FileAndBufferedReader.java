@@ -10,8 +10,8 @@ public class FileAndBufferedReader {
 
 	public static void main(String[] args) throws IOException{ 
 	
-		FileReader reader=null;
-		BufferedReader br=null;
+		FileReader reader=null; // Must for File Reading
+		BufferedReader br=null; // Optional for efficient Reading purposes
 		String path1="D:\\Telusko\\InputOutput";
 		
 		try
@@ -22,11 +22,11 @@ public class FileAndBufferedReader {
 			reader=new FileReader(file);
 			br=new BufferedReader(reader);
 			
-			String str = br.readLine();
+			String str = br.readLine(); // Read one line at a time
 			
 			while(str != null)
 			{
-				System.out.println(str);
+				System.out.println(str); // Print one line at a time
 				
 				str=br.readLine();
 			}			
