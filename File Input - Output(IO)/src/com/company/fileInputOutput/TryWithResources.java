@@ -23,7 +23,7 @@ public class TryWithResources {
 		
 		try(Alien a=new Alien()){		
 			
-			System.out.println("Using Alien resource");
+			System.out.println("Using Alien resource in try()");
 		}
 	
 		try(BufferedWriter bw=new BufferedWriter(new FileWriter("D:\\Telusko\\InputOutput\\java2.txt"))){
