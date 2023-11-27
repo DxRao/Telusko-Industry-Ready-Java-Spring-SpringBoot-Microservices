@@ -17,16 +17,16 @@ public class CreateOrInsertDataIntoDatabase{
 				
 				String url="jdbc:mysql://localhost:3306/telusko";
 				String userName="root";
-				String password="rao3mysql";
+				String password="password";
 				
 				Connection connect=DriverManager.getConnection(url, userName, password);
 				System.out.println("Connection established!");
 				
-				Statement stmnt = connect.createStatement();
+				Statement stmt = connect.createStatement();
 				String query="INSERT INTO Employee (ID, fname, age, address, gender)"
-						+ "VALUES(3, 'Shramik', 22, 'kolhapur', 'M')";
+						+ "VALUES(4, 'Shramik', 22, 'kolhapur', 'M')";
 				
-				int rowAffected=stmnt.executeUpdate(query);
+				int rowAffected=stmt.executeUpdate(query);
 				System.out.println("Query is fine!");
 				
 				if(rowAffected != 0)
@@ -34,7 +34,7 @@ public class CreateOrInsertDataIntoDatabase{
 				else
 					System.out.println("Failed to add data");				
 				
-				stmnt.close();
+				stmt.close();
 				connect.close();
 	}
 }
