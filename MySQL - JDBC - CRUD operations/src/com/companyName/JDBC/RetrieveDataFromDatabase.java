@@ -13,7 +13,7 @@ public class RetrieveDataFromDatabase{
 		//Establish the connection		
 		String url="jdbc:mysql://localhost:3306/telusko";
 		String userName="root";
-		String password="rao3mysql";
+		String password="password";
 		
 		Connection connect=DriverManager.getConnection(url, userName, password);
 		System.out.println("Connection is established!");
