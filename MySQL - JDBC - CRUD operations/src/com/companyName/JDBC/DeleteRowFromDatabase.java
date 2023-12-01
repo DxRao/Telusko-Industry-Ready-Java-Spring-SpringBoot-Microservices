@@ -16,7 +16,7 @@ public class DeleteRowFromDatabase {
 		
 		String url="jdbc:mysql://localhost:3306/telusko";
 		String userName="root";
-		String password="*******";
+		String password="********";
 		
 		Connection connect=DriverManager.getConnection(url, userName, password);
 		System.out.println("Connection established!");		
