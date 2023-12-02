@@ -23,7 +23,7 @@ public class JdbcUtility
 	{
 		String url="jdbc:mysql://localhost:3306/telusko";
 		String userName="root";
-		String password="************";
+		String password="*********";
 	
 		return DriverManager.getConnection(url, userName, password);
 	}
