@@ -6,7 +6,7 @@
 <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 <property name="connection.url">jdbc:mysql://localhost:3306/telusko_db </property>
 <property name="connection.username">root</property>
-<property name="connection.password">rao3mysql</property>
+<property name="connection.password">************</property>
 <!--   optional   -->
 <property name="hibernate.show_sql">true</property>
 <!--  Inform HIBERNATE to display the query on the console it has generated 
