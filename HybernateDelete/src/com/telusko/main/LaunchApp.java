@@ -16,6 +16,7 @@ public class LaunchApp
 		Session session=sessionFactory.openSession();
 		
 		Integer id=2;
+		
 		Student st = session.get(Student.class, id);
 		if(st!=null)
 		{
