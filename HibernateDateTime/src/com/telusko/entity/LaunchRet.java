@@ -13,6 +13,7 @@ public class LaunchRet {
 		addAnnotatedClass(Implementers.class).buildSessionFactory();
 		
 		Session session = sessionFactory.openSession();
+		
 		Integer id = 2;
 		Implementers imp = session.get(Implementers.class, id);
 		
