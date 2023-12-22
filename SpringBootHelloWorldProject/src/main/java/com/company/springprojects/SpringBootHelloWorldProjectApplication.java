@@ -12,7 +12,7 @@ public class SpringBootHelloWorldProjectApplication {
 		
 		System.out.println("Hello World And Welcome To The World Of Spring Boot");
 		ApplicationContext context = SpringApplication.run(SpringBootHelloWorldProjectApplication.class, args);
-		Student_100_Years student = context.getBean(Student_100_Years.class);
+		Student_For_Lifetime student = context.getBean(Student_For_Lifetime.class);
 		student.learning();
 	}
 

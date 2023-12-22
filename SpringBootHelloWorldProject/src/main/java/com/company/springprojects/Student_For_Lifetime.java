@@ -3,9 +3,9 @@ package com.company.springprojects;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Student_100_Years {
+public class Student_For_Lifetime {
 	
-	public Student_100_Years() {
+	public Student_For_Lifetime() {
 		
 		System.out.println("Student obj created");
 	}
