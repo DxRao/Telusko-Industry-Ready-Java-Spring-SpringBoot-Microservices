@@ -1,0 +1,38 @@
+<beans 
+
+xmlns="http://www.springframework.org/schema/beans" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:context="http://www.springframework.org/schema/context" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+http://www.springframework.org/schema/context 
+http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+<!--  <bean id="alpha" class="com.telusko.bean.Alpha">
+
+<property ref= "beta" name="beta"></property>
+
+</bean>
+
+<bean id="beta" class="com.telusko.bean.Beta">
+<property ref= "alpha" name="alpha"></property>
+</bean>  -->
+
+<!--  <bean id="alpha" class="com.telusko.bean.Alpha">
+
+<constructor-arg ref= "beta" name="beta"/>
+</bean>
+
+<bean id="beta" class="com.telusko.bean.Beta">
+<constructor-arg  ref = "alpha" name = "alpha"/>
+</bean>  -->
+
+<bean id="alpha" class="com.telusko.bean.Alpha">
+<property ref="beta" name="beta"/>
+</bean>
+
+<bean id="beta" class="com.telusko.bean.Beta">
+<constructor-arg ref="alpha" name="alpha"/>
+</bean>
+
+</beans>
