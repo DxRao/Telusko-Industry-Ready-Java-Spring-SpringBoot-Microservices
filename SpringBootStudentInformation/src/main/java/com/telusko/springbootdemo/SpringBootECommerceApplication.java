@@ -5,10 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
-public class SpringBootStudentInformationApplication {
+public class SpringBootECommerceApplication {
 
 	public static void main(String[] args) {
-		ApplicationContext context =  SpringApplication.run(SpringBootStudentInformationApplication.class, args);
+		ApplicationContext context =  SpringApplication.run(SpringBootECommerceApplication.class, args);
 		
 		Amazon amazon = context.getBean(Amazon.class);
 
