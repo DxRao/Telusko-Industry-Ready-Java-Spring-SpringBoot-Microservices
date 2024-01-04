@@ -6,11 +6,11 @@ import org.springframework.context.ConfigurableApplicationContext;
 import com.telusko.beans.CourseSelection;
 
 @SpringBootApplication
-public class SpringBootCourierDeliveryApplication {
+public class SpringBootCourseSelectionApplication {
 
 	public static void main(String[] args) {
 		
-		ConfigurableApplicationContext context = SpringApplication.run(SpringBootCourierDeliveryApplication.class, args);
+		ConfigurableApplicationContext context = SpringApplication.run(SpringBootCourseSelectionApplication.class, args);
 		
 		CourseSelection cs = context.getBean(CourseSelection.class);
 		
@@ -18,11 +18,11 @@ public class SpringBootCourierDeliveryApplication {
 		
 		if(status)
 		{
-			System.out.println("Successfully delivered");
+			System.out.println("Successful course selection and payment");
 		}
 		else
 		{
-			System.out.println("Failed to deliver");
+			System.out.println("Failed course selection and payment");
 		}
 		
 	        context.close();
