@@ -1,0 +1,1 @@
+create table course(cid int, cname varchar(255), primary key(cid));
