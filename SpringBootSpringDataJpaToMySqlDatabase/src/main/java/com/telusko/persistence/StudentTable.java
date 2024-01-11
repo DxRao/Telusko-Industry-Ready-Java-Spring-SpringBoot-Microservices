@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+// POJO Business Object (BO)
 @Entity
 @Table(name="studenttable")
 public class StudentTable 

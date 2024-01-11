@@ -19,9 +19,9 @@ public class SpringBootSpringDataJpaToMySqlDatabaseApplication {
 		IStudentDao dao=context.getBean(IStudentDao.class);
 		
 		StudentTable st=new StudentTable();
-		st.setSid(4);
-		st.setSname("Rao");
-		st.setScity("Bengaluru");		
+		st.setSid(5);
+		st.setSname("Srinivas");
+		st.setScity("Hyderabad");		
 		
 		dao.save(st);		
 	
