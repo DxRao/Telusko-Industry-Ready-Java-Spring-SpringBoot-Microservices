@@ -29,7 +29,7 @@ public class SpringBootVaccineManagementAppUsingSpringDataJpaToMySqlDatabaseAppl
 //		vaccineList.add(new VaccineDetails("Sputnik", "RussianCompany", 4454));
 	
 //		service.registerMultipleVaccineDetails(vaccineList);
-//		System.out.println("Check your db");
+//		System.out.println("Check your data base for data entries");
 		
 //		Long count=service.getVaccinesCount();
 //		System.out.println("Number of vaccines in DB table : "+ count);
@@ -37,14 +37,18 @@ public class SpringBootVaccineManagementAppUsingSpringDataJpaToMySqlDatabaseAppl
 		System.out.println("******************************");
 
 		Long id=2l; // l for long
+		
 		Boolean status=service.checkAvailability(id);
+		
 		if(status)
 			System.out.println("Vaccine available with id : "+ id);
 		else
 			System.out.println("Vaccine not available with id "+ id);
 		
-		id=9l;
+		id=9l; // this vaccine id not available in database as of now
+		
 		status=service.checkAvailability(id);
+		
 		if(status)
 			System.out.println("Vaccine available with id : "+ id);
 		else
@@ -54,26 +58,27 @@ public class SpringBootVaccineManagementAppUsingSpringDataJpaToMySqlDatabaseAppl
 		
 //		Iterable<VaccineDetails> vaccineInfo=service.getAllVaccineInfo();
 		
-//		vaccineInfo.forEach((vaccines)->System.out.println(vaccines));
+//		vaccineInfo.forEach((vaccines)->System.out.println(vaccines)); // you can type anything like even single letter in place of "vaccines" word here
 		
 		//  OR
 		
 //		List<VaccineDetails> vaccineInfoList=(List<VaccineDetails>) service.getAllVaccineInfo(); // Explicit casting
 		
-//		vaccineInfoList.forEach((vaccines)->System.out.println(vaccines));
+//		vaccineInfoList.forEach((vaccines)->System.out.println(vaccines)); // you can type anything like even single letter in place of "vaccines" word here
 		
 		//  OR
 		
-//		service.getAllVaccineInfo().forEach((vaccines)->System.out.println(vaccines));
+//		service.getAllVaccineInfo().forEach((vaccines)->System.out.println(vaccines)); // you can type anything like even single letter in place of "vaccines" word here
 		
 		///////////////////////////////////////////////////////////
 		
 		List<Long> vaccineIds=new ArrayList<>();
+		
 		vaccineIds.add(1l); // l for long ... vaccine available in database
 		vaccineIds.add(2l); // l for long ... vaccine available in database
 		vaccineIds.add(9l); // this vaccine not available in database currently
 		
-		service.getAllVaccineInfoByIds(vaccineIds).forEach((v)->System.out.println(v));		
+		service.getAllVaccineInfoByIds(vaccineIds).forEach((v)->System.out.println(v));	// you can type anything like even any single letter or any word in place of "v" letter here	
 		
 		context.close();
 	
