@@ -81,7 +81,7 @@ public class SpringBootVaccineManagementAppUsingSpringDataJpaToMySqlDatabaseAppl
 		service.getAllVaccineInfoByIds(vaccineIds).forEach((v)->System.out.println(v));	// you can type anything like even any single letter or any word in place of "v" letter here
 		
 		
-		id=12l;
+//		id=12l; // not present in database
 
 //		Optional<VaccineDetails> optional = service.getVaccineById(id);
 //		if(optional.isPresent())
