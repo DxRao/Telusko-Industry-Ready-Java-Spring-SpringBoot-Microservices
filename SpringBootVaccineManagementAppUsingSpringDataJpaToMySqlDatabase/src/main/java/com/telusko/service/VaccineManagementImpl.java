@@ -3,6 +3,9 @@ package com.telusko.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.Optional;
+
 import com.telusko.bo.VaccineDetails;
 import com.telusko.dao.IVaccineRepo;
 
@@ -48,6 +51,50 @@ public class VaccineManagementImpl implements IVaccineManagement {
 	public Iterable<VaccineDetails> getAllVaccineInfoByIds(Iterable<Long> idList) {
 		
 		return repo.findAllById(idList);
+	}
+		
+		@Override
+		public Optional<VaccineDetails> getVaccineById(Long id) {
+			return  repo.findById(id) ;
+			
+		}
+
+		@Override
+		public String removeVaccineById(Long id) {
+			Optional<VaccineDetails> optional = repo.findById(id);
+			if(optional.isPresent())
+			{
+				repo.deleteById(id);
+			return "Record deleted";
+			}
+					
+			return "There is no record with id" + id;
+		}
+
+		@Override
+		public String removeVaccinesByIds(List<Long> ids) 
+		{
+			Iterable<VaccineDetails> list = repo.findAllById(ids);
+			int count=ids.size();
+			if(count==((List)list).size())
+			{
+			      repo.deleteAllById(ids);
+			      return count + " Num of rows deleted";
+			}
+			return "Some problem to delete records";
+		}
+
+		@Override
+		public String removeVaccineByObject(VaccineDetails vaccine) {
+			
+			Optional<VaccineDetails> vaccinInfo = repo.findById(vaccine.getId());
+			
+			if(vaccinInfo.isPresent())
+			{
+			repo.delete(vaccine);
+			return "Given vaccine Object record deleted";
+			}
+			return "Record not found to delete";
 	}
 
 }

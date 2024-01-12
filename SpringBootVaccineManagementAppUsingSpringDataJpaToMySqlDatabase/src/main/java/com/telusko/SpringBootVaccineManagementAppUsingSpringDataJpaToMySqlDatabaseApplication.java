@@ -78,7 +78,32 @@ public class SpringBootVaccineManagementAppUsingSpringDataJpaToMySqlDatabaseAppl
 		vaccineIds.add(2l); // l for long ... vaccine available in database
 		vaccineIds.add(9l); // this vaccine not available in database currently
 		
-		service.getAllVaccineInfoByIds(vaccineIds).forEach((v)->System.out.println(v));	// you can type anything like even any single letter or any word in place of "v" letter here	
+		service.getAllVaccineInfoByIds(vaccineIds).forEach((v)->System.out.println(v));	// you can type anything like even any single letter or any word in place of "v" letter here
+		
+		
+		id=12l;
+
+//		Optional<VaccineDetails> optional = service.getVaccineById(id);
+//		if(optional.isPresent())
+//			System.out.println(optional.get());
+//		optional.orElseThrow(()-> new IllegalArgumentException("Record not found"));
+		
+//		System.out.println(service.getVaccineById(id).orElse(new VaccineDetails()));
+		
+//		System.out.println(service.removeVaccineById(id));
+//		
+//		List<Long> idList=new ArrayList<>();
+//		idList.add(3L);
+//		idList.add(2L);
+	
+//		System.out.println(service.removeVaccinesByIds(idList));
+		
+//		VaccineDetails v=new VaccineDetails();
+//		v.setId(4L);
+//		v.setVaccineName("Sputnik");
+//		v.setVaccineCompany("RussianBased");
+//		v.setPrice(4454);
+//		System.out.println(service.removeVaccineByObject(v));
 		
 		context.close();
 	
