@@ -16,6 +16,7 @@ public class SpringBootCourseSelectionApplication {
 		
 		boolean status=cs.chooseCourse(444.5);
 		
+		
 		if(status)
 		{
 			System.out.println("Successful course selection and payment");
