@@ -28,9 +28,10 @@ public class SpringBootMangoDbRegisterAndFindCustomersApplication {
 //		String status=service.registerCustomer(dto);
 //		System.out.println(status);
 		
-		service.findAllCustomers().forEach(cus->System.out.println(cus));
-//		String status=service.removeDocument("1bf81adc00");
+//		service.findAllCustomers().forEach(cus->System.out.println(cus));
+//		String status=service.removeDocument("1fd95da29f");
 //		System.out.println(status);
+		service.findAllCustomers().forEach(cus->System.out.println(cus));
 		
 		context.close();
 
