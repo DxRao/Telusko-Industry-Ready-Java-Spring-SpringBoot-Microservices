@@ -16,7 +16,7 @@ public class FirstController
 	public String someMessage(Model model)
 	{
 		System.out.println("Model is Implemented by "+ model.getClass().getName());
-		model.addAttribute("name", "Navin");
+		model.addAttribute("name", "Navin"); // Key=name; value="Navin"
 		
 		return "home";//lvn
 	}
@@ -25,16 +25,16 @@ public class FirstController
 	public String someMessage2(Model model)
 	{
 		System.out.println("Model is Implemented by "+ model.getClass().getName());
-		model.addAttribute("name", "Ashim");
+		model.addAttribute("name", "Ashim"); // Key=name; value="Ashim"
 		
-		return "home";//lvn
+		return "home";//lvn -> logical view name
 	}
 	
 //	@PostMapping("/skill")
 //	public String someImportantMessage(Model model)
 //	{
 //		System.out.println("Model is Implemented by "+ model.getClass().getName());
-//		model.addAttribute("message", "Focus is very important");
+//		model.addAttribute("message", "Focus is very important");// key =message; value="Focus is very important"
 //		
 //		return "focus";//lvn
 //	}
@@ -42,7 +42,8 @@ public class FirstController
 	public String someImportantMessage(Model model)
 	{
 		System.out.println("Model is Implemented by "+ model.getClass().getName());
-		model.addAttribute("message", "Focus is very important 1st Controller");
+		model.addAttribute("message", "Focus is very important 1st Controller"); 
+		// Key=message; value="Focus is very important 1st Controller"
 		
 		return "focus";//lvn
 	}
@@ -50,16 +51,22 @@ public class FirstController
 	@GetMapping("/alien")
 	public String someMessages(Map<String, Object> model)
 	{
-		model.put("name", "Tabish");
+		model.put("name", "Tabish"); // Key=name; value="Tabish"
 		return "home";//lvn
 	}
 	
-	@GetMapping("/telusko")
-	public void someInfo(Map<String, Object> model)
-	{
-		model.put("name", "Manju");
-		return ;
-	}
+//	@GetMapping("/telusko") // didn't work
+//	public void someInfo(Map<String, Object> model)
+//	{
+//		model.put("name", "Manju");
+//		return ;
+//	}
 	
+	@GetMapping("/telusko")
+	public String someInfo(Map<String, Object> model)
+	{
+		model.put("name", "Manju"); // Key=name; value="Manju"
+		return "telusko" ;
+	}
 
 }
