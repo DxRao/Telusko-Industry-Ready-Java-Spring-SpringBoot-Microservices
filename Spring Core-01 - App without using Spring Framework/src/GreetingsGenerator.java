@@ -17,7 +17,7 @@ public class GreetingsGenerator {
 	//Business logic
 	public String generateGreeting(String name)
 	{
-		int hour=date.getHours();//get the hour in 24 hour formate
+		int hour=date.getHours();//get the hour in 24 hour format
 		
 		if(hour<12)
 		{
