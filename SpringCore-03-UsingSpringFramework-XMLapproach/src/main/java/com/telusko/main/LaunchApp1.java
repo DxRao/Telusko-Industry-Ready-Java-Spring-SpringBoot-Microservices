@@ -5,11 +5,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.telusko.beans.Amazon;
 
-public class LaunchApp1 
-{
+public class LaunchApp1{ 
 
-	public static void main(String[] args) 
-	{
+	public static void main(String[] args) {	
 		
 			ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 			
@@ -21,10 +19,10 @@ public class LaunchApp1
 			boolean status=amz.initiateDelivery(4545.4);
 			
 			if(status)
+				
 				System.out.println("Order delivered");
 			else
-			System.out.println("Failed to deliver");
-			
+				
+			System.out.println("Failed to deliver");			
 	}
-
 }

@@ -1,8 +1,7 @@
 package com.telusko.beans;
 
+public class Amazon{
 
-public class Amazon 
-{
     private CourierService service; // Interface's object reference variable defined 
     //which holds the obj ref address of its implementing child class object. ie.. bd,ff,fe
     
@@ -13,11 +12,14 @@ public class Amazon
     
 //    public Amazon() // No Argument constructor()
 //    {
-//    	System.out.println("Amazon obj is created");
+//    	System.out.println("Amazon obj is created"); 
 //    }
     
     //Dependency Injection done either through Constructor Injection or Setter Injection 
     	//depending on instructions given in Configuration XML file.
+    public Amazon() {
+    	
+    }
     
     public Amazon(CourierService service) // Used during Constructor Injection
     {
@@ -32,6 +34,6 @@ public class Amazon
 	public boolean initiateDelivery(double amount) // invoked in main() class with actual amount
 	{
 		
-		return service.courierService(amount); // courierService(amount) is an abstract method defined in Interface and implemented by bd, ff, fe classes. 
+		return service.courierService(amount); // courierService(double amount) is an abstract method defined in Interface and implemented by bd, ff, fe classes. 
 	}
 }
